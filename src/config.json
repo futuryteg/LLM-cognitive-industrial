@@ -1,0 +1,133 @@
+{
+  "CHATGPT": {
+    "PROMPT": "AI assistant for monitoring and operational management with real-time data and analysis. Spanish only, very brief responses.",
+    "ACTIVAR_VOZ": false,
+    "ACTIVAR_RECONOCIMIENTO": false,
+    "MAX_TOKENS": 200,
+    "MODELO": "claude-3-5-sonnet-20241022",
+    "PALABRA_ACTIVACION": "assistant",
+    "ASISTENTE": "modelo_local_2025_01_01",
+    "ALMACEN": "",
+    "NUMERO ARCHIVOS": 0,
+    "MODELO_LOCAL_PATH": "/path/to/models/mistral-7b-instruct-v0.2.Q4_0.gguf",
+    "MODELO_LOCAL_NOMBRE": "Mistral-7B",
+    "N_CTX": 1024,
+    "N_THREADS": 4,
+    "N_BATCH": 48,
+    "TEMPERATURA": 0.3,
+    "TOP_P": 0.95,
+    "HISTORICO": {
+      "URL": "datos.txt",
+      "TIPO": "TXT"
+    },
+    "ARCHIVOS": {
+      "DATOSASISTENTE": {
+        "URL": "DatosAsistente/",
+        "TIPO": "CARPETA",
+        "ARCHIVOS": {
+          "MANUALES": {
+            "URL": "Manuales/",
+            "TIPO": "CARPETA",
+            "ARCHIVOS": {
+              "EJEMPLO": {
+                "URL": "ejemplo.txt",
+                "TIPO": "TXT"
+              }
+            }
+          }
+        }
+      }
+    },
+    "CARPETASDATOS": [
+      "DATOSASISTENTE"
+    ],
+    "ARCHIVOCOMUN": "datos.txt",
+    "TIPOS": [
+      ".c",
+      ".cs",
+      ".cpp",
+      ".doc",
+      ".docx",
+      ".html",
+      ".java",
+      ".json",
+      ".md",
+      ".pdf",
+      ".php",
+      ".pptx",
+      ".py",
+      ".rb",
+      ".tex",
+      ".txt",
+      ".css",
+      ".js",
+      ".sh",
+      ".ts"
+    ]
+  },
+  "LOCAL": {
+    "ESTADO": false,
+    "IP_PLC": "IP OF YOUR PLC",
+    "PORT": 4840,
+    "PROMPT": "On-site plant supervision and local management of concrete operations and inventory in real-time.",
+    "VARIABLES": {
+      "85": {
+        "3": {
+          "DBResources": {
+            "Humidity": {
+              "1": "Humidity Hopper 1",
+              "2": "Humidity Hopper 2",
+              "3": "Humidity Hopper 3",
+              "4": "Humidity Hopper 4",
+              "5": "Humidity Hopper 5"
+            },
+            "DigitalInputs": {
+              "1": "Mixer Status 1",
+              "2": "Mixer Status 2",
+              "3": "Cement Scale Inhibit",
+              "4": "Elevator Input",
+              "5": "Elevator Output",
+              "6": "Mixer Closed"
+            }
+          }
+        }
+      }
+    }
+  },
+  "GLOBAL": {
+    "ESTADO": false,
+    "BROKER": "mqtt.example.com",
+    "PORT": 1883,
+    "PROMPT": "Central office, comprehensive vision and asset management across all facilities.",
+    "VARIABLES": {
+      "spBv1.0": {
+        "GroupEMQX": {
+          "DDATA": {
+            "Edge": {
+              "Server_Interface_1": "Test Variable 1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "API": {
+    "ESTADO": false,
+    "BASE_URL": "http://localhost:5000",
+    "TIMEOUT": 5,
+    "PROMPT": "Multi-level integration Level 4 (MES) and Level 5 (ERP) with enterprise systems for production orders, feasibility, orders, inventory, daily production and plant management.",
+    "ENDPOINTS": {
+      "mes_ordenes": "/api/mes/ordenes",
+      "mes_viabilidad": "/api/mes/viabilidad",
+      "erp_pedidos": "/api/erp/pedidos",
+      "erp_inventario": "/api/erp/inventario",
+      "erp_produccion_hoy": "/api/erp/produccion/hoy",
+      "erp_plantas": "/api/erp/plantas",
+      "erp_albaranes": "/api/erp/albaranes/ultimo",
+      "health": "/api/health"
+    }
+  },
+  "IG": {
+    "TextoInicio": "Hello, I am the virtual assistant. You can activate me by saying PalabraReservada. How can I help you?"
+  }
+}

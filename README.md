@@ -267,27 +267,6 @@ Sistema: "Consultando... El pedido 2847 está en producción, estimado de finali
 - Presiona Enter o clic en "Enviar"
 - La respuesta aparecerá en la ventana de chat
 
-### Ejemplos de Consultas
-
-#### Consultas Simples (Nivel único)
-```
-"¿Cuál es la temperatura del silo 3?"
-"Muestra el estado de la mezcladora 1"
-"¿Cuánto cemento hay disponible?"
-```
-
-#### Consultas Moderadas (Cálculos)
-```
-"¿Cuántos pedidos pendientes tenemos hoy?"
-"Calcula el inventario total de agregados"
-"¿Cuál es el promedio de humedad de las tolvas?"
-```
-
-#### Consultas Complejas (Multinivel)
-```
-"¿Podemos producir 45 m³ de C25/30 mañana a las 7?"
-"Verifica disponibilidad de planta 2, materiales y programación"
-"Dame un resumen del estado general de producción"
 ```
 
 ## Arquitectura

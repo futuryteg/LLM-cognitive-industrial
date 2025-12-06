@@ -229,7 +229,8 @@ industrial-cognitive-assistant/
 ├── variablesG.py           # Variables globales
 ├── json_Hilos.py           # Gestión de configuración
 ├── requirements.txt        # Dependencias
-└── README.md               # Este archivo
+└── README.md
+└── LICENSE
 ```
 
 ## Uso

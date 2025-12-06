@@ -42,7 +42,7 @@ Sistema conversacional con IA local para acceso cognitivo a información industr
 
 - **Sistema Operativo**: Raspberry Pi OS (64-bit)
 - **Python**: 3.11.2 o superior
-- **Memoria disponible**: ~5.5 GB para el modelo
+- **Memoria disponible**: ~3.82 GB para el modelo
 
 ### Sistemas Industriales (Opcional)
 
@@ -331,17 +331,6 @@ Sistema: "Consultando... El pedido 2847 está en producción, estimado de finali
 └─────────────────────────────────────────┘
 ```
 
-### Flujo de Datos
-
-1. **Usuario** → Consulta por voz/texto
-2. **Capa 1** → Transcripción a texto
-3. **Capa 2** → Análisis semántico con LLM
-4. **Capa 3** → Planificación de consulta multinivel
-5. **Capa 4** → Recuperación de datos industriales
-6. **Capa 3** → Síntesis de respuesta con LLM
-7. **Capa 1** → Respuesta sintetizada por voz
-8. **Capa 5** → Registro y persistencia
-
 ## Estructura del Proyecto
 
 ### Módulos Principales
@@ -450,28 +439,6 @@ htop
 # Verificar uso de GPU/CPU
 vcgencmd get_throttled  # Raspberry Pi
 ```
-
-## Rendimiento Esperado
-
-### Tiempos de Respuesta (Raspberry Pi 5, 8GB)
-
-- **Consultas simples**: 14.19 ± 7.56 s
-- **Consultas moderadas**: 16.45 ± 6.40 s
-- **Consultas complejas multinivel**: 23.24 ± 6.59 s
-
-### Consumo de Recursos
-
-- **Memoria**: 5.2 GB promedio (pico 5.8 GB)
-- **CPU**: 35% promedio durante inferencia
-- **Temperatura**: 69.3°C promedio (pico 79.6°C)
-- **Latencia de comunicación**: < 10 ms promedio
-
-### Mejora Operacional
-
-- **vs. Métodos tradicionales**: 26-77× más rápido
-- **Reducción de tiempo**: de 15-30 min a 14-23 seg
-- **Tasa de éxito**: 100% en pruebas de 30 min
-
 ## Publicación
 
 Este repositorio implementa la investigación publicada en:
@@ -479,25 +446,6 @@ Este repositorio implementa la investigación publicada en:
 **Hidalgo-Castelo, F., Guerrero-González, A., García-Córdova, F., Lloret-Abrisqueta, F., & Torregrosa Bonet, C.** (2025). *Multimodal Cognitive Architecture with Local Generative AI for Industrial Control of Concrete Plants on Edge Devices*. **Sensors**, 25(x). https://doi.org/10.3390/xxxxx
 
 Para más detalles técnicos, metodología experimental y resultados completos, consultar el paper.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Fork el repositorio
-2. Crear una rama de feature (`git checkout -b feature/AmazingFeature`)
-3. Commit los cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir un Pull Request
-
-## Contacto
-
-**Fernando Hidalgo-Castelo**  
-Doctoral Candidate, Universidad Politécnica de Cartagena  
-Email: fernando.hidalgo2@edu.upct.es
-
-**Prof. Antonio Guerrero-González** (Director de Tesis)  
-Email: antonio.guerrero@upct.es
 
 ## Licencia
 
@@ -514,7 +462,6 @@ Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más det
 
 <div align="center">
 
-**[⬆ Volver arriba](#multimodal-cognitive-architecture-for-industrial-control)**
 
 Desarrollado para la democratización del acceso cognitivo a información industrial
 

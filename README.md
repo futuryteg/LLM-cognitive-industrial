@@ -213,11 +213,12 @@ Ubicación: `src/config.json`
 ```
 industrial-cognitive-assistant/
 ├── src/
-│   ├── config.json          # Configuración principal
-│   ├── Imagen.png           # Icono del chatbot
-│   └── DatosAsistente/      # Datos adicionales del sistema
-│       └── Manuales/        # Manuales y documentación
-├── main.py                  # Punto de entrada
+│   ├── config.json         # Configuración principal
+│   ├── Imagen.png          # Icono del chatbot
+│   └── DatosAsistente/     # Datos adicionales del sistema
+│   │   └── Manuales/       # Manuales y documentación
+│   └── models/             # LLM
+├── main.py                 # Punto de entrada
 ├── chatGPT.py              # Gestión del LLM
 ├── reconocimiento.py       # Reconocimiento de voz
 ├── sintesis.py             # Síntesis de voz

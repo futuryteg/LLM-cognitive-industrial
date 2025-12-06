@@ -331,17 +331,6 @@ Sistema: "Consultando... El pedido 2847 está en producción, estimado de finali
 └─────────────────────────────────────────┘
 ```
 
-### Flujo de Datos
-
-1. **Usuario** → Consulta por voz/texto
-2. **Capa 1** → Transcripción a texto
-3. **Capa 2** → Análisis semántico con LLM
-4. **Capa 3** → Planificación de consulta multinivel
-5. **Capa 4** → Recuperación de datos industriales
-6. **Capa 3** → Síntesis de respuesta con LLM
-7. **Capa 1** → Respuesta sintetizada por voz
-8. **Capa 5** → Registro y persistencia
-
 ## Estructura del Proyecto
 
 ### Módulos Principales

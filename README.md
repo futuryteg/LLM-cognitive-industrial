@@ -1,4 +1,4 @@
-# Multimodal Cognitive Architecture for Industrial Control
+# Multimodal Cognitive Architecture with Local Generative AI for Industrial Control of Concrete Plants on Edge Devices
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)

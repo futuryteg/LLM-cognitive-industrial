@@ -296,38 +296,38 @@ Sistema: "Consultando... El pedido 2847 está en producción, estimado de finali
 
 ```
 ┌─────────────────────────────────────────┐
-│  Capa 1: Interfaz Multimodal           │
+│  Capa 1: Interfaz Multimodal            │
 │  - Reconocimiento de voz (Google API)   │
-│  - Síntesis de voz (gTTS)              │
-│  - Interfaz gráfica (Tkinter)          │
+│  - Síntesis de voz (gTTS)               │
+│  - Interfaz gráfica (Tkinter)           │
 └─────────────────────────────────────────┘
                     ↕
 ┌─────────────────────────────────────────┐
-│  Capa 2: Procesamiento de Lenguaje     │
-│  - Mistral-7B (llama.cpp)              │
+│  Capa 2: Procesamiento de Lenguaje      │
+│  - Mistral-7B (llama.cpp)               │
 │  - Interpretación semántica             │
 └─────────────────────────────────────────┘
                     ↕
 ┌─────────────────────────────────────────┐
-│  Capa 3: Razonamiento y Planificación  │
-│  - Extracción de parámetros            │
-│  - Determinación de nivel industrial   │
-│  - Gestión de contexto conversacional  │
+│  Capa 3: Razonamiento y Planificación   │
+│  - Extracción de parámetros             │
+│  - Determinación de nivel industrial    │
+│  - Gestión de contexto conversacional   │
 └─────────────────────────────────────────┘
                     ↕
 ┌─────────────────────────────────────────┐
-│  Capa 4: Control y Ejecución           │
-│  ├─ OPC UA → PLC/SCADA (Levels 2-3)    │
-│  ├─ MQTT → Sensores (Level 1)          │
-│  └─ REST API → MES/ERP (Levels 4-5)    │
+│  Capa 4: Control y Ejecución            │
+│  ├─ OPC UA → PLC/SCADA (Levels 2-3)     │
+│  ├─ MQTT → Sensores (Level 1)           │
+│  └─ REST API → MES/ERP (Levels 4-5)     │
 └─────────────────────────────────────────┘
                     ↕
 ┌─────────────────────────────────────────┐
-│  Capa 5: Retroalimentación y           │
+│  Capa 5: Retroalimentación y            │
 │           Persistencia                  │
 │  - Registro de conversaciones (JSON)    │
-│  - Monitoreo térmico                   │
-│  - Trazabilidad de operaciones         │
+│  - Monitoreo térmico                    │
+│  - Trazabilidad de operaciones          │
 └─────────────────────────────────────────┘
 ```
 
